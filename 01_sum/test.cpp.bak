@@ -8,12 +8,12 @@ int main()
 {	
 	int myarray[5] = {1,3,5,7,9};  
 	vector<int> nums(myarray,myarray+5);
-	vector<int>::iterator it; //use iterator , necessaty for the erase
+	vector<int>::iterator it;
 	for (it=nums.begin();it!=nums.end() ;it++)
 	{
-		nums.erase(nums.begin()+1);//delete second item
+		nums.erase(nums.begin()+1);
 	}
-    for(int i=0;i<nums.size();i++) 
+    for(int i=0;i<nums.size();i++)
     {
         cout<<nums[i]<<",";  
     } 
